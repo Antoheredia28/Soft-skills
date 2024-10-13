@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_Softskills</title>
+    <link rel="stylesheet" href="formSoftSkill.css">
+</body>
+</html>
+<section id="test">
+    <h2>Evalúa tus Habilidades Blandas</h2>
+    <p>Responde las siguientes preguntas para evaluar tus habilidades blandas. Selecciona una opción en una escala del 1 al 5, donde 1 es "Totalmente en desacuerdo" y 5 es "Totalmente de acuerdo".</p>
+
+    <form id="skillsForm">
+        <!-- Pregunta 1: Comunicación -->
+        <div class="question">
+            <label for="communication">1. Me siento cómodo comunicando mis ideas de manera clara.</label><br>
+            <input type="radio" name="communication" value="1" required> 1
+            <input type="radio" name="communication" value="2"> 2
+            <input type="radio" name="communication" value="3"> 3
+            <input type="radio" name="communication" value="4"> 4
+            <input type="radio" name="communication" value="5"> 5
+        </div>
+
+        <!-- Pregunta 2: Empatía -->
+        <div class="question">
+            <label for="empathy">2. Suelo ponerme en el lugar de los demás y comprender sus emociones.</label><br>
+            <input type="radio" name="empathy" value="1" required> 1
+            <input type="radio" name="empathy" value="2"> 2
+            <input type="radio" name="empathy" value="3"> 3
+            <input type="radio" name="empathy" value="4"> 4
+            <input type="radio" name="empathy" value="5"> 5
+        </div>
+
+        <!-- Pregunta 3: Gestión del Tiempo -->
+        <div class="question">
+            <label for="timeManagement">3. Organizo y administro bien mi tiempo para cumplir con los plazos.</label><br>
+            <input type="radio" name="timeManagement" value="1" required> 1
+            <input type="radio" name="timeManagement" value="2"> 2
+            <input type="radio" name="timeManagement" value="3"> 3
+            <input type="radio" name="timeManagement" value="4"> 4
+            <input type="radio" name="timeManagement" value="5"> 5
+        </div>
+
+        <!-- Pregunta 4: Resolución de Problemas -->
+        <div class="question">
+            <label for="problemSolving">4. Me siento seguro resolviendo problemas complejos bajo presión.</label><br>
+            <input type="radio" name="problemSolving" value="1" required> 1
+            <input type="radio" name="problemSolving" value="2"> 2
+            <input type="radio" name="problemSolving" value="3"> 3
+            <input type="radio" name="problemSolving" value="4"> 4
+            <input type="radio" name="problemSolving" value="5"> 5
+        </div>
+
+        <!-- Pregunta 5: Trabajo en Equipo -->
+        <div class="question">
+            <label for="teamwork">5. Me gusta colaborar con otras personas para alcanzar objetivos comunes.</label><br>
+            <input type="radio" name="teamwork" value="1" required> 1
+            <input type="radio" name="teamwork" value="2"> 2
+            <input type="radio" name="teamwork" value="3"> 3
+            <input type="radio" name="teamwork" value="4"> 4
+            <input type="radio" name="teamwork" value="5"> 5
+        </div>
+
+        <!-- Botón de Enviar -->
+        <button type="submit">Ver mis resultados</button>
+    </form>
+
+    <!-- Sección para mostrar los resultados -->
+    <div id="results" class="hidden">
+        <h3>Resultados de tu evaluación</h3>
+        <p id="resultText"></p>
+    </div>
+    <script src="formSoftSkll.js"></script>
+</section>
